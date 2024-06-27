@@ -133,6 +133,9 @@
     firefox
     git
     gnome.gnome-tweaks
+    helix
+    file
+    shadowsocks-rust
     jq
     libva-utils
     papirus-icon-theme
