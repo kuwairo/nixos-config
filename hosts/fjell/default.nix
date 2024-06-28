@@ -125,23 +125,28 @@
 
   environment.systemPackages = with pkgs; [
     adw-gtk3
+    amberol
     bc
     blackbox-terminal
     btop
     celluloid
+    chezmoi
     curl
+    dig
+    file
     firefox
     git
     gnome.gnome-tweaks
     helix
-    file
-    shadowsocks-rust
     jq
     libva-utils
     papirus-icon-theme
+    shadowsocks-rust
+    traceroute
     transmission-gtk
     tree
     wl-clipboard
+    zstd
   ];
 
   programs.gnupg.agent = {
