@@ -125,6 +125,7 @@
 
   environment.systemPackages = with pkgs; [
     adw-gtk3
+    age
     amberol
     bc
     blackbox-terminal
@@ -148,6 +149,11 @@
     wl-clipboard
     zstd
   ];
+
+  environment.variables = {
+    EDITOR = "hx";
+    VISUAL = "hx";
+  };
 
   programs.gnupg.agent = {
     enable = true;
