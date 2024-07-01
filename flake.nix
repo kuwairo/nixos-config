@@ -5,12 +5,17 @@
 
   outputs =
     { self, nixpkgs }:
+    let
+      system = "x86_64-linux";
+    in
     {
-      nixosConfigurations.fjell = nixpkgs.lib.nixosSystem {
-        system = "x86_64-linux";
-        modules = [ ./hosts/fjell ];
+      nixosConfigurations = {
+        fjell = nixpkgs.lib.nixosSystem {
+          inherit system;
+          modules = [ ./hosts/fjell ];
+        };
       };
 
-      formatter.x86_64-linux = nixpkgs.legacyPackages.x86_64-linux.nixfmt-rfc-style;
+      formatter.${system} = nixpkgs.legacyPackages.${system}.nixfmt-rfc-style;
     };
 }
