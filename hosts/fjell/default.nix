@@ -160,6 +160,11 @@
     enableSSHSupport = true;
   };
 
+  virtualisation.docker = {
+    enable = true;
+    storageDriver = "overlay2";
+  };
+
   # Configuration version, do not change
   system.stateVersion = "24.05";
 }
