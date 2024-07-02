@@ -160,9 +160,12 @@
     enableSSHSupport = true;
   };
 
-  virtualisation.docker = {
-    enable = true;
-    storageDriver = "overlay2";
+  virtualisation = {
+    incus.enable = true;
+    docker = {
+      enable = true;
+      storageDriver = "overlay2";
+    };
   };
 
   # Configuration version, do not change
