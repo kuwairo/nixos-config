@@ -65,6 +65,7 @@
   networking = {
     hostName = "fjell";
     hostId = "ae329cd2";
+    nftables.enable = true;
     networkmanager.enable = true;
   };
 
