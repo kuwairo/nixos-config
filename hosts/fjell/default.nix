@@ -111,8 +111,10 @@
   users.users.regn = {
     isNormalUser = true;
     extraGroups = [
-      "wheel"
+      "docker"
+      "incus-admin"
       "networkmanager"
+      "wheel"
     ];
   };
 
