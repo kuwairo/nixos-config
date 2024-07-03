@@ -65,8 +65,13 @@
   networking = {
     hostName = "fjell";
     hostId = "ae329cd2";
-    nftables.enable = true;
     networkmanager.enable = true;
+
+    firewall = {
+      enable = true;
+      trustedInterfaces = [ "incusbr0" ];
+    };
+    nftables.enable = true;
   };
 
   time.timeZone = "Asia/Krasnoyarsk";
