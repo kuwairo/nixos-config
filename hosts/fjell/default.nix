@@ -151,6 +151,7 @@
     libva-utils
     papirus-icon-theme
     shadowsocks-rust
+    sshfs
     traceroute
     transmission-gtk
     tree
