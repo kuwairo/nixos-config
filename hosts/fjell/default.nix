@@ -119,6 +119,7 @@
     extraGroups = [
       "docker"
       "incus-admin"
+      "kvm"
       "networkmanager"
       "wheel"
     ];
@@ -150,6 +151,7 @@
     jq
     libva-utils
     papirus-icon-theme
+    qemu
     shadowsocks-rust
     sshfs
     traceroute
